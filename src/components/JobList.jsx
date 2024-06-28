@@ -17,7 +17,7 @@ const JobList = ({job}) => {
                                 <div className="mb-5">
                                     {console.log("1"+showFullDescription)}
                                     {description}
-                                    <button className="text-gray-500" onClick={() => {
+                                    <button className="text-gray-500 block" onClick={() => {
                                         setShowFullDescription((prevState) => {
                                             return !prevState
                                         })
