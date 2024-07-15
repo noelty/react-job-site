@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {useState} from 'react'
 import {FaMapMarkerAlt} from 'react-icons/fa'
 
@@ -15,13 +16,11 @@ const JobList = ({job}) => {
                                 </div>
                 
                                 <div className="mb-5">
-                                    {console.log("1"+showFullDescription)}
                                     {description}
-                                    <button className="text-gray-500" onClick={() => {
+                                    <button className="text-gray-500 block" onClick={() => {
                                         setShowFullDescription((prevState) => {
                                             return !prevState
                                         })
-                                        console.log("2"+showFullDescription)
                                     }}>{showFullDescription? "Less": "More"}</button>
                                 </div>
                 
@@ -34,12 +33,12 @@ const JobList = ({job}) => {
                                     <FaMapMarkerAlt className='inline-block mr-1'/>
                                     {job.location}
                                     </div>
-                                    <a
-                                    href="job.html"
+                                    <Link
+                                    to="job"
                                     className="h-[36px] bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-center text-sm"
                                     >
                                     Read More
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

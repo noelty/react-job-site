@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import propTypes from 'prop-types'
 
 const Card = ({children, bg}) => {
   return (
@@ -6,10 +6,6 @@ const Card = ({children, bg}) => {
         {children}
     </div>
   )
-}
-Card.PropTypes = {
-    children: PropTypes.node.isRequired,
-    bg: PropTypes.string.isRequired
 }
 
 export default Card
