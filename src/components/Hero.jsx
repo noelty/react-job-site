@@ -23,10 +23,4 @@ const Hero = ({title="Become a React Dev",subTitle="Find the React job that fits
   )
 }
 
-Hero.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-};
-
-
 export default Hero
