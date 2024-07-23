@@ -5,6 +5,7 @@ import { FaArrowLeft } from "react-icons/fa";
 const Jobpage = () => {
   // const { id } = useParams();
   const job = useLoaderData();
+  console.log(job);
   return (
     <>
       <section>

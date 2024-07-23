@@ -1,13 +1,12 @@
 import React from "react";
-import JobListing from "../components/JobListing"
-import jobs from "../jobs.json"
+import JobListing from "../components/JobListing";
 
 const JobsPage = () => {
-  return(
+  return (
     <>
-    <JobListing isHome={false} />
+      <JobListing isHome={false} />
     </>
-  )
+  );
 };
 
 export default JobsPage;
