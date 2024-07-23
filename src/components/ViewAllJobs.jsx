@@ -1,17 +1,17 @@
-import {useState} from "react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ViewAllJobs = () => {
-    const [showMoreJob, setShowMoreJob] = useState();
+  const [showMoreJob, setShowMoreJob] = useState();
   return (
     <section className="m-auto max-w-lg my-10 px-6">
-      <a
-        href="jobs.html"
-        className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-        // onClick={}
-        >View All Jobs</a
-      >
+      <Link
+        to="/jobs"
+        className="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">
+        View All Jobs
+      </Link>
     </section>
-  )
-}
+  );
+};
 
-export default ViewAllJobs
+export default ViewAllJobs;
